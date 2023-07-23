@@ -1,0 +1,150 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - thanks_giving
+  - love_you
+  - register_me
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - tell_name
+  - my_name:
+      use_entities:
+        - name
+      ignore_entities:
+        - number
+        - regno
+  - mobile_no:
+      use_entities:
+        - number
+      ignore_entities:
+        - regno
+        - name
+  - my_reg_no:
+      use_entities:
+        - regno
+      ignore_entities:
+        - number
+        - name
+  - know_upcoming_event
+  - particular_month_event
+  - play_video
+  - out_of_scope
+  - chitchat
+  - faqs_ask_mnnit_full_form
+  - take_me_to_home_intent
+  - take_me_to_academic_intent
+
+entities:
+  - name
+  - number
+  - month_name
+  - regno
+
+actions:
+  - action_say_events
+  - restart_convo
+  - action_say_mevents
+  - action_submit
+  - action_video
+  - take_me_to_home
+  - take_me_to_academic
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: name
+  number:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: number
+  regno:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: regno
+
+forms:
+  user_details_form:
+    required_slots:
+      - name
+      - number
+      - regno
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_name:
+  - text: "I am a bot, named ChatBOT3.2."
+
+  utter_ask_name:
+  - text: "What's your name?"
+
+  utter_ask_number:
+  - text: "What's your mobile number?"
+
+  utter_ask_regno:
+  - text: "What's your registration number?"
+
+  utter_thanks:
+  - text: "Thanks for answering :) ."
+
+  utter_details_thanks:
+  - text: "Thanks for providing the given details \nName: {Name}, \nMobile_Number: {Mobile_number}, \nRegistration No.: {Registration_No}"
+
+  utter_out_of_scope:
+  - text: "Sorry, I have not learned this yet!"
+
+  utter_chitchat/ask_name:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: Hello My name is EventBuzz Bot.
+  - text: I am called EventBuzz Bot.
+
+  utter_chitchat/ask_weather:
+  - text: Oh, it does look sunny right now in Berlin.
+    image: "https://i.imgur.com/vwv7aHN.png"
+  - text : I am not sure of the whole week but I can see the sun is out today.
+
+  utter_faqs_mnnit_full_form:
+  - text: The full form of MNNIT is Motilal Nehru National Institute of Technology.
+
+  utter_answer_thanks:
+  - text: You're welcome! I'm glad I could be of help. If you need anything else, just ask. 😊
+  - text: You're welcome! I aim to respond promptly to all your queries. 🚀
+  - text: You're welcome! I'm happy to spend time with you. 😊
+  - text: You're very welcome! I'm here to assist anytime. 😊
+  - text: You're welcome! Understanding your needs is my priority. 😉
+
+  utter_love_you:
+  - text: I am a bot, but I love you too.❤️
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

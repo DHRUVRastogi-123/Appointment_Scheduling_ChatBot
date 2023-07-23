@@ -1,0 +1,11 @@
+EventID,EventName,EventType,EventDate,StartTime,EndTime,Location,Description
+1,Welcome Party,Celebration,2023-08-15,18:00,22:00,Main Hall,"Join us for a fun-filled evening as we welcome all the new students and faculty members to our institute. Music, food, and games await you!"
+2,Tech Symposium,Tech Fest,2023-09-10,09:00,17:00,Conference Room A,A gathering of tech enthusiasts and experts to discuss the latest trends in technology and showcase innovative projects.
+3,Career Fair,Job Fair,2023-10-05,10:00,16:00,Sports Complex,Connect with leading companies looking to hire talented individuals. Bring your resumes and dress professionally for the best opportunities.
+4,Cultural Fest,Cultural Fest,2023-11-20,16:00,23:00,Open Grounds,"Immerse yourself in the vibrant cultures of our institute through dance, music, art, and traditional cuisine. All are welcome to participate!"
+5,Sports Day,Sports Event,2023-12-02,08:00,15:00,Sports Complex,Get ready for a day filled with excitement and healthy competition as students and faculty compete in various sports and games.
+6,Guest Lecture Series,Lecture Series,2023-12-15,14:00,16:00,Lecture Hall B,Renowned speakers from different fields will share their insights and experiences with our institute community. Open to all students and faculty.
+7,Annual Gala Dinner,Celebration,2023-12-31,20:00,01:00,Banquet Hall,"Bid farewell to the year with a grand gala dinner, music, and entertainment. Dress code: Formal."
+8,Science Exhibition,Exhibition,2024-01-20,10:00,17:00,Exhibition Hall,Explore interactive exhibits and demonstrations showcasing cutting-edge scientific research and discoveries. Open to the public.
+9,Hackathon,Tech Fest,2024-02-08,09:00,20:00,Computer Lab A,Calling all coders and problem solvers! Form teams and compete to create innovative solutions in this 24-hour hackathon.
+10,Alumni Homecoming Reunion,Celebration,2024-03-18,16:00,22:00,Main Hall,"Welcome back, alumni! Reconnect with old friends and relive memories during this special reunion event."

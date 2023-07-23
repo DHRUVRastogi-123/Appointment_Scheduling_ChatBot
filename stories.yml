@@ -1,0 +1,92 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: love story
+  steps:
+  - intent: love_you
+  - action: utter_love_you
+
+- story: thanks giving
+  steps:
+  - intent: thanks_giving
+  - action: utter_answer_thanks
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: name path 2
+#   steps:
+#   - intent: tell_name
+#   - action: utter_name
+#   - action: utter_ask_name
+#   - intent: my_name
+#     entities:
+#     - name: "dhruv"
+#   - slot_was_set:
+#     - name: "dhruv"
+#   - action: utter_ask_number
+#   - intent: mobile_no
+#     entities:
+#     - number: "7217452328"
+#   - slot_was_set:
+#     - number: "7217452328"
+#   - action: utter_thanks
+
+- story: bot says upcoming events
+  steps:
+  - intent: know_upcoming_event
+  - action: action_say_events
+  - action: restart_convo
+
+- story: bot says an event in a specific month
+  steps:
+  - intent: particular_month_event
+    entities:
+    - month_name: "January"
+  - action: action_say_mevents
+  - action: restart_convo
+
+- story: happy play video path
+  steps:
+  - intent: play_video
+  - action: action_video
+
+- story: take me to home site
+  steps:
+  - intent: faqs_ask_mnnit_full_form
+  - action: utter_faqs_mnnit_full_form
+
+- story: take me to home site
+  steps:
+  - intent: take_me_to_home_intent
+  - action: take_me_to_home
+
+- story: take me to academic site
+  steps:
+  - intent: take_me_to_academic_intent
+  - action: take_me_to_academic

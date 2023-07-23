@@ -1,0 +1,344 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: love_you
+  examples: |
+    - love_you
+    - I love you
+    - luv u
+    - adore you
+    - I'm in love with you
+    - love you so much
+    - I love u a lot
+    - loving you
+    - I'm deeply in love with you
+    - love ya
+    - I'm in love with your chatbot
+    - loving you always
+    - I have feelings for you
+    - I've fallen for you
+    - loving you unconditionally
+    - I have a crush on you
+    - I'm smitten by you
+    - love you to bits
+    - I'm head over heels for you
+    - I can't stop loving you
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: thanks_giving
+  examples: |
+    - thank_you
+    - thanks
+    - thx
+    - thank you so much
+    - thanks a lot
+    - thanks a bunch
+    - thank you very much
+    - thanks a million
+    - thanks for your help
+    - thanks for the information
+    - thank you for your assistance
+    - thanks for the support
+    - thank you for being so helpful
+    - thank you for everything
+    - thanks for the quick response
+    - thanks for understanding
+    - thanks for the great service
+    - thank you for your time
+    - thanks for the update
+    - thanks for the advice
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: tell_name
+  examples: |
+    - tell your name
+    - what's your name?
+    - who are you?
+    - name yourself
+    - distinguish yourself
+    - what should i call you?
+    - what others call you?
+    - what are you?
+    - you?
+
+- intent: register_me
+  examples: |
+    - Register me
+    - register_me
+    - sign me up
+    - I want to register
+    - register my account
+    - create an account for me
+    - please register me
+    - can you register me?
+    - I need to sign up
+    - help me register
+    - add me to the list
+    - register on my behalf
+    - I'd like to be registered
+    - enroll me in the system
+    - I'm interested in registering
+    - put me on the registration list
+    - I want to become a member
+    - please add me to your database
+    - I need a user account
+    - include me in the registration process
+
+- intent: my_name
+  examples: |
+    - my name is [dhruv]{"entity":"name","value":"dhruv"}
+    - my name is [palak]{"entity":"name","value":"palak"}
+    - my name is [dheeraj]{"entity":"name","value":"dheeraj"}
+    - [dhruv]{"entity":"name","value":"dhruv"} this side
+    - [dhruv]{"entity":"name","value":"dhruv"} i am
+    - i am [dhruv]{"entity":"name","value":"dhruv"}
+    - i [dhruv]{"entity":"name","value":"dhruv"}
+    - people call me [dhruv]{"entity":"name","value":"dhruv"}
+
+- intent: mobile_no
+  examples: |
+    - my number is [7217452328]{"entity":"number","value":"7217452328"}
+    - [7217452328]{"entity":"number","value":"7217452328"}
+    - [7217452328]{"entity":"number","value":"7217452328"} is my number
+    - my mobile no is [7217452328]{"entity":"number","value":"7217452328"}
+    - my mobile number is [7217452328]{"entity":"number","value":"7217452328"}
+    - here is my number [9876543210]{"entity":"number","value":"9876543210"}
+    - my number is [1234567890]{"entity":"number","value":"1234567890"}
+    - [8005550101]{"entity":"number","value":"8005550101"} is my mobile number
+    - my mobile number is [9998887776]{"entity":"number","value":"9998887776"}
+    - [5551234567]{"entity":"number","value":"5551234567"} is my phone number
+    - my phone number is [1234567890]{"entity":"number","value":"1234567890"}
+    - here is my mobile number [9876543210]{"entity":"number","value":"9876543210"}
+    - my number is [9990001112]{"entity":"number","value":"9990001112"}
+    - [1231231231]{"entity":"number","value":"1231231231"} is my contact number
+    - my mobile no is [7778889990]{"entity":"number","value":"7778889990"}
+    - my contact number is [4445556660]{"entity":"number","value":"4445556660"}
+
+- intent: my_reg_no
+  examples: |
+    - my registration number is [20223086]{"entity":"regno","value":"20223086"}
+    - my regno is [20223086]{"entity":"regno","value":"20223086"}
+    - here is my regno [21568200]{"entity":"regno","value":"21568200"}
+    - registration number is [20223086]{"entity":"regno","value":"20223086"}
+    - This is my regno [20223086]{"entity":"regno","value":"20223086"}
+    - my registration number is [20210010]{"entity":"regno","value":"20210010"}
+    - reg no [20216856]{"entity":"regno","value":"20216856"}
+    - reg number [20223086]{"entity":"regno","value":"20223086"}
+    - [20223086]{"entity":"regno","value":"20223086"}
+    - The registration number is [20223086]{"entity":"regno","value":"20223086"}
+    - I have [20223086]{"entity":"regno","value":"20223086"} as my registration number
+    - [20223109]{"entity":"regno","value":"20223109"} is my registration number
+    - my regno is [20231020]{"entity":"regno","value":"20231020"}
+    - I want to update my regno to [20202525]{"entity":"regno","value":"20202525"}
+    - Can you find my details with regno [20182568]{"entity":"regno","value":"20182568"}?
+    - I forgot to mention my regno earlier, it's [20192019]{"entity":"regno","value":"20192019"}
+    - [20223084]{"entity":"regno","value":"20223084"} is my unique registration number
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: know_upcoming_event
+  examples: |
+    - Can you tell me about the upcoming event?
+    - What is the next event in this college?
+    - When and what is the next event of the college?
+    - Tell me about the next even the college is hosting
+    - What is the upcoming event in the college?
+
+- intent: particular_month_event
+  examples: |
+    - Is there any important even in the month of [January]{"entity":"month_name", "value":"January"}
+    - Are there any significant events scheduled for [February]{"entity":"month_name", "value":"February"}?
+    - I'm curious if there are any important happenings in [March]{"entity":"month_name", "value":"March"}.
+    - Tell me if there are any notable occasions in [April]{"entity":"month_name", "value":"April"} coming up.
+    - Is anything special planned for [May]{"entity":"month_name", "value":"May"}?
+    - Please let me know about any important events in [June]{"entity":"month_name", "value":"June"} this year.
+    - What are the significant happenings in [July]{"entity":"month_name", "value":"July"}?
+    - I'm interested in knowing if there are any important events in [August]{"entity":"month_name", "value":"August"}.
+    - Could you inform me about any notable occasions in [September]{"entity":"month_name", "value":"September"}?
+    - I want to find out if there are any important events in [October]{"entity":"month_name", "value":"October"}.
+    - Are there any significant happenings in [November]{"entity":"month_name", "value":"November"} that I should know about?
+    - Please provide information on any important events in [December]{"entity":"month_name", "value":"December"}.
+
+- intent: play_video
+  examples: |
+    - play the mentioned video
+    - open the url
+    - open the link in browser
+    - show me video that i asked for
+    - play the specified video
+    - start the video I mentioned
+    - show the requested video
+    - play the video you mentioned earlier
+    - open the video link I provided
+    - show me the requested video
+    - display the video I asked for
+    - start the video as mentioned before
+    - play the video from the given link
+    - show the mentioned video clip
+    - open the video I requested
+    - display the video I mentioned in the chat
+    - start playing the video mentioned in the previous message
+    - show the video from the link I shared earlier
+    - play the video that was mentioned in the last conversation
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+- intent: chitchat/ask_name
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+
+- intent: chitchat/ask_weather
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+
+- intent: faqs_ask_mnnit_full_form
+  examples: |
+    - What is the full form of MNNIT.
+    - Can you tell me the full form of MNNIT?
+    - What does MNNIT stand for?
+    - I'm curious about the full form of MNNIT.
+    - Please provide the full expansion of MNNIT.
+    - Could you explain the meaning of MNNIT?
+    - What is the complete name of MNNIT?
+    - I'd like to know the full name of MNNIT.
+    - Can you give me the full name of MNNIT?
+    - Tell me the expanded form of MNNIT.
+    - What does MNNIT mean in its full form?
+    - I'm not sure about the full form of MNNIT, can you help?
+    - Could you provide the full abbreviation of MNNIT?
+    - Please clarify the full form of MNNIT for me.
+    - What is MNNIT's full form?
+    - What does MNNIT stand for in its entirety?
+
+- intent: take_me_to_home_intent
+  examples: |
+    - Can you take me to the official site MNNIT
+    - Please navigate me to the official website of MNNIT.
+    - Can you direct me to the official site of MNNIT?
+    - Take me to the official MNNIT website.
+    - Lead me to the MNNIT official site.
+    - Guide me to the official webpage of MNNIT.
+    - I want to visit the official website of MNNIT, can you take me there?
+    - Show me the official site of MNNIT.
+    - Redirect me to the MNNIT official website.
+    - Could you open the official MNNIT site for me?
+    - Help me access the official webpage of MNNIT.
+    - I'd like to go to the official MNNIT website, can you assist?
+    - Please provide a link to the official site of MNNIT.
+    - I need to visit the MNNIT official website, could you lead the way?
+    - Can you direct me to the official webpage of MNNIT?
+    - I'm interested in the official site of MNNIT, can you show me?
+
+- intent: take_me_to_academic_intent
+  examples: |
+    - Can you take me to academic site of MNNIT?
+    - Please navigate me to the academic website of MNNIT.
+    - Can you direct me to the academic site of MNNIT?
+    - Take me to the academic MNNIT website.
+    - Lead me to the MNNIT academic site.
+    - Guide me to the academic webpage of MNNIT.
+    - I want to visit the academic website of MNNIT, can you take me there?
+    - Show me the academic site of MNNIT.
+    - Redirect me to the MNNIT academic website.
+    - Could you open the academic MNNIT site for me?
+    - Help me access the academic webpage of MNNIT.
+    - I'd like to go to the academic MNNIT website, can you assist?
+    - Please provide a link to the academic site of MNNIT.
+    - I need to visit the MNNIT academic website, could you lead the way?
+    - Can you direct me to the academic webpage of MNNIT?
+    - I'm interested in the academic site of MNNIT, can you show me?
